@@ -12,6 +12,11 @@ public class PanelController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         this.transform.position += new Vector3(.1f, 0, 0);
+        if (this.transform.position.x > 11f)
+        {
+            GameManager.instance.lives--;
+            Destroy(this.gameObject);
+        }
 	}
 
     private void OnMouseOver()

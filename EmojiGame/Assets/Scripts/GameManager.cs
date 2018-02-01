@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -11,6 +12,9 @@ public class GameManager : MonoBehaviour {
     public GameObject panel;
 
     public Vector3 panel_spawn;
+
+    public int lives;
+    public GameObject lives_text;
 
     private void Awake()
     {
@@ -28,12 +32,11 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        if (Input.GetMouseButtonDown(0))
+
+        lives_text.GetComponent<Text>().text = "Lives: " + lives;
+        if (lives <= 0)
         {
-            //Vector3 pz = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            //print(pz);
-            //GameObject temp = Instantiate(square);
-            //temp.transform.position = new Vector3(pz.x, pz.y, 0);
+            //TODO: GameOver
         }
     }
 
