@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance;
 
     public GameObject square;
-    public List<GameObject> emojis;
+    public List<Sprite> emojis;
     public GameObject panel;
 
     public Vector3 panel_spawn;

@@ -25,6 +25,7 @@ public class PanelController : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             GameObject new_emoji = Instantiate(GameManager.instance.square, Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 1), Quaternion.identity);
+            new_emoji.GetComponent<SpriteRenderer>().sprite = GameManager.instance.emojis[Random.Range(0, GameManager.instance.emojis.Count)];
             new_emoji.transform.parent = this.transform;
         }
     }

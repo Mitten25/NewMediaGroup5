@@ -113,6 +113,48 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &435586639
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4883722756123190, guid: 6b0cdfd88d06bcc48967f3b607d4c11f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883722756123190, guid: 6b0cdfd88d06bcc48967f3b607d4c11f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883722756123190, guid: 6b0cdfd88d06bcc48967f3b607d4c11f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883722756123190, guid: 6b0cdfd88d06bcc48967f3b607d4c11f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883722756123190, guid: 6b0cdfd88d06bcc48967f3b607d4c11f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883722756123190, guid: 6b0cdfd88d06bcc48967f3b607d4c11f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883722756123190, guid: 6b0cdfd88d06bcc48967f3b607d4c11f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4883722756123190, guid: 6b0cdfd88d06bcc48967f3b607d4c11f, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6b0cdfd88d06bcc48967f3b607d4c11f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &726343168
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +339,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   square: {fileID: 1410804159322146, guid: 6b0cdfd88d06bcc48967f3b607d4c11f, type: 2}
-  emojis: []
+  emojis:
+  - {fileID: 21300000, guid: b66525a54aa4a3c4e8e534dc3bf52985, type: 3}
+  - {fileID: 21300000, guid: 75cefaf5bca98324199b066c95f2d4d4, type: 3}
+  - {fileID: 21300000, guid: fcc9bb10bf3429a4ca2fe4e4069403bb, type: 3}
+  - {fileID: 21300000, guid: c8eac7d9ce8c0554e8939cab327f2582, type: 3}
+  - {fileID: 21300000, guid: 00c8414ee46d6a84e858207ff2e81dd0, type: 3}
+  - {fileID: 21300000, guid: 3dfdd777e2aa56449b1887ba1605e995, type: 3}
+  - {fileID: 21300000, guid: 29d84ce667ff02f4ca3c304a3adf392e, type: 3}
+  - {fileID: 21300000, guid: cf283fc6cfbe15a4596918e1be7957b4, type: 3}
+  - {fileID: 21300000, guid: 33204557bcf140f4ea829b209307b847, type: 3}
+  - {fileID: 21300000, guid: 590f1335e96d03c428563b99915b8962, type: 3}
+  - {fileID: 21300000, guid: 4598cdbea97123940b5e11e081d71d33, type: 3}
+  - {fileID: 21300000, guid: 223e3d95df45a6a48adbd3092769ac4b, type: 3}
+  - {fileID: 21300000, guid: ea3c4cb4fe545594fb8aca9815bbd1ff, type: 3}
+  - {fileID: 21300000, guid: e3e90bac4f89c9a4f93b6954d17ecdd6, type: 3}
+  - {fileID: 21300000, guid: ad666c843842f1042938ed01a1a32023, type: 3}
+  - {fileID: 21300000, guid: 35148735e6c2e5345b7a9f6621f66598, type: 3}
+  - {fileID: 21300000, guid: 06bf9f4b7d3a8354e919ec8eef1d1e10, type: 3}
+  - {fileID: 21300000, guid: 9dbf45d771b56a4429e91dc8d0544a60, type: 3}
   panel: {fileID: 1409111216484680, guid: 046b06c565537454faa0e98ef36f8ff5, type: 2}
   panel_spawn: {x: -15, y: 0, z: 0}
   lives: 3
