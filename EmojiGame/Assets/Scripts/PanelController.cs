@@ -22,7 +22,7 @@ public class PanelController : MonoBehaviour {
             if ( !emojified ) {
                 GameManager.instance.lives--;
             }
-            Destroy(this.gameObject);
+            Destroy(transform.parent.gameObject);
         }
         if ( shakeTimer > 0 ) {
             shakeTimer -= Time.deltaTime;
