@@ -8,16 +8,25 @@ public class PanelController : MonoBehaviour {
     private float shakeTimer;
     private float shakeAmount;
     private float pushTimer;
+	public Sprite[] sprites;
+	public GameObject hitSpawn;
+	public GameObject frame;
 
     // Use this for initialization
     void Start () {
-
+		BoxCollider2D b = GetComponent<BoxCollider2D> ();
+		SpriteRenderer r = GetComponent<SpriteRenderer> ();
+		Sprite s = sprites [Random.Range (0, sprites.Length)];
+		r.sprite = s;
+		b.size = r.sprite.bounds.size;
+		frame.transform.localScale = new Vector3 (b.size.x/4f, b.size.y / 4f, 0);
     }
 
     // Update is called once per frame
     void Update () {
-        this.transform.position += new Vector3(.1f, 0, 0);
-        if (this.transform.position.x > 11f)
+		this.transform.position += new Vector3(2f+Time.timeSinceLevelLoad, 0, 0)*Time.deltaTime;
+		SpriteRenderer r = GetComponent<SpriteRenderer> ();
+		if (this.transform.position.x > 11f + r.size.x*5f)
         {
             if ( !emojified ) {
                 GameManager.instance.lives--;
@@ -40,6 +49,9 @@ public class PanelController : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(0))
         {
+			Destroy (GetComponent<BoxCollider2D> ());
+			Instantiate(hitSpawn, Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 1), Quaternion.identity);
+			GetComponent<AudioSource> ().Play ();
             Shake( 1f, 0.2f );
             Push();
             emojified = true;
